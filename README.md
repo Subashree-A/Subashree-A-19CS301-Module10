@@ -158,3 +158,37 @@ for i in l:
 ![image](https://github.com/user-attachments/assets/c0ebdf92-9610-454e-9ab6-65f6c7dd8b5f)
 
 ### Result: Thus, the given program is implemented and executed successfully .
+# Ex No 10.5: SEB-LifoQueue
+### Aim:
+To write a Python program using the `LifoQueue` class to implement basic stack operations including insertion, checking if the stack is full, and popping all elements.
+
+### Algorithm:
+
+**STEP 1:** Start.  
+**STEP 2:** Import `LifoQueue` from the `queue` module.  
+**STEP 3:** Accept an integer input `n` (number of elements to push).  
+**STEP 4:** Create a stack object with a maximum size of 7.  
+**STEP 5:** For `i` in range `n`, read an input and push it onto the stack using `put()`.  
+**STEP 6:** Check if the stack is full using `stack.full()` and print the result.  
+**STEP 7:** For `i` in range `n`, pop elements from the stack using `get()` and print them.  
+**STEP 8:** Stop.
+
+### Program:
+```python
+from queue import LifoQueue
+
+n = int(input())
+stack = LifoQueue(maxsize=7)
+
+for i in range(n):
+    stack.put(input())
+
+print(stack.full())
+
+for i in range(n):
+    print(stack.get())
+```
+### Output:
+![image](https://github.com/user-attachments/assets/39906591-472b-4916-9ea7-b74a4aadadcc)
+### Result:
+Thus the program was executed Successfully.
